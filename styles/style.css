@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "open sans", sans-serif;
+}
+
+/* Blue bar at the top, with thing light blue bottom border*/
+
+.header {
+    color: white;
+    background-color: #0D3F75;
+    border-bottom: 2px solid #93DDEF;
+    padding: 1em;
+}
+
+main {
+    width: 95%;
+    padding: 1em;
+}
+
+/* set up the 3x3 picture grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+}
+
+.cell {
+    line-height: 1.5em;
+}
+
+.cell img {
+    width: 98%;
+}
+
+.name {
+    font: bold 1.1em "Oswald";
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* To tint the footer images, use a linear gradient with the same start and end color.  
+    See the example on the 'Multiple Backgrounds' slide of the css slides */
+
+.footer-third {
+    color: white;
+    font: 2.5em "Oswald";
+    text-align: center;
+    height: 275px;
+    padding: 95px 0;
+}
+
+#donate {
+    background: linear-gradient(rgba(165, 166, 238, 0.7), rgba(165, 166, 238, 0.7)), no-repeat center/cover url("../starter_files/images/donate.jpg");
+}
+
+#volunteer {
+    background: linear-gradient(rgba(165, 166, 238, 0.7), rgba(165, 166, 238, 0.7)), no-repeat center/cover url("../starter_files/images/volunteer.jpg");
+}
+
+#location {
+    background: linear-gradient(rgba(165, 166, 238, 0.7), rgba(165, 166, 238, 0.7)), no-repeat center/cover url("../starter_files/images/location.png");
+}
+
+/* ============= Dog Tags ============= */
+
+.tag {
+    /* display: inline; */
+    font-size: .8em;
+    background-color: #93DDEF;
+    padding: 2px 3px;
+    /* margin: 2px 2px; */
+    border-radius: 10px;
+}
+
+.name:not(.t1)~#t1 {
+    visibility: hidden;
+}
+
+.name:not(.t2)~#t2 {
+    visibility: hidden;
+}
+
+.name:not(.t3)~#t3 {
+    visibility: hidden;
+}
+
+.name:not(.t4)~#t4 {
+    visibility: hidden;
+}
+
+.name:not(.t5)~#t5 {
+    visibility: hidden;
+}
+
+.name:not(.t6)~#t6 {
+    visibility: hidden;
+}
+
+.name:not(.t7)~#t7 {
+    visibility: hidden;
+}
+
+.name:not(.t8)~#t8 {
+    visibility: hidden;
+}
+
+.name:not(.t9)~#t9 {
+    visibility: hidden;
+}
+
+.name:not(.t10)~#t10 {
+    visibility: hidden;
+}
+
+.name:not(.t11)~#t11 {
+    visibility: hidden;
+}
+
+.name:not(.t12)~#t12 {
+    visibility: hidden;
+}
+
+.name:not(.t13)~#t13 {
+    visibility: hidden;
+}
+
+.name:not(.t14)~#t14 {
+    visibility: hidden;
+}
+
+/* The names under each photo */
+
+/* .t1::after {
+    content: "TAG!!!";
+    color: pink;
+}
+.t2::after {
+    content: "TAG2222!!!";
+    color: blue;
+} */
+
+/* 
+.t1::after  {Adult}
+.t2::after  {Male}
+.t3::after  {Medium}
+.t4::after  {Easygoing}
+.t5::after  {Good with cats}
+.t6::after  {Senior}
+.t7::after  {Female}
+.t8::after  {Small}
+.t9::after  {Good with kids}
+.t10::after {>Good with other dogs}
+.t11::after {>Young}
+.t12::after {>Large}
+.t13::after {>Energetic}
+.t14::after {>Puppy<} 
+*/

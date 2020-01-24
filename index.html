@@ -4,65 +4,80 @@
 <head>
     <meta charset="utf-8">
     <title>Happy Valley Shelter Home Page</title>
-    <link href="styles/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,700" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
+    <header class="header">
         <h1>Happy Valley Shelter</h1>
     </header>
 
     <main>
-        <h2>Adopt a Dog</h2>
+        <h2 class="main-heading">Adopt a Dog</h2>
 
         <p> 
             If you are intersted in adopting one of our animals, please fill out our <a href="#">online adoption form</a>.
         </p>
 
 <div class="grid">
-    <div class="cell"><img class="1 2 3 4 5" src="starter_files/images/beans.jpg" id="beans" alt="a small black dog" title="Beans"></div>
-    <div class="cell"><img class="6 7 8 4 9 10" src="starter_files/images/boston-terrier.jpg" id="zelda" alt="a boston terrier" title="Zelda"></div>
-    <div class="cell"><img class="11 7 12 13 9 10" src="starter_files/images/boxer.jpg" id="baby" alt="a boxer" title="Baby"></div>
-    <div class="cell"><img class="11 2 12 13 9 10 5" src="starter_files/images/golden-lab.jpg" id="tom-tom" alt="a golden lab" title="Tom-tom"></div>
-    <div class="cell"><img class="1 2 8 13" src="starter_files/images/little-dog.jpg" id="marco" alt="a little dog" title="Marco"></div>
-    <div class="cell"><img class="1 2 3 4 13 9 10 5" src="starter_files/images/old-shaggy.jpg" id="shackleton" alt="an old shaggy dog" title="Shackleton"></div>
-    <div class="cell"><img class="1 7 8 4 9" src="starter_files/images/shih-tzu.jpg" id="midge" alt="A shih-tzu" title="Midge"></div>
-    <div class="cell"><img class="11 7 12 4 13 9 10 5" src="starter_files/images/young-bulldog.jpg" id="ladybird" alt="A young bulldog" title="Ladybird"></div>
-    <div class="cell"><img class="14 7 3 13 9 10 5" src="starter_files/images/young-peppy.jpg" id="mina" alt="A young peppy dog" title="Mina"></div>
+    <div class="cell"><img src="starter_files/images/beans.jpg" id="Beans" alt="a small black dog" title="Beans">
+        <p class="name t1 t2 t3 t4 t5">Beans</p>
+            <span class="tag" id="t1">Adult</span>
+            <span class="tag" id="t2">Male</span>
+            <span class="tag" id="t3">Medium</span>
+            <span class="tag" id="t4">Easygoing</span>
+            <span class="tag" id="t5">Good with cats</span>
+            <span class="tag" id="t6">Senior</span>
+            <span class="tag" id="t7">Female</span>
+            <span class="tag" id="t8">Small</span>
+            <span class="tag" id="t9">Good with kids</span>
+            <span class="tag" id="t10">Good with other dogs</span>
+            <span class="tag" id="t11">Young</span>
+            <span class="tag" id="t12">Large</span>
+            <span class="tag" id="t13">Energetic</span>
+            <span class="tag" id="t14">Puppy</span> 
+    </div>
+    <div class="cell"><img src="starter_files/images/boston-terrier.jpg" id="Zelda" alt="a boston terrier" title="Zelda"><p class="name t6 t7 t8 t4 t9 t10">Zelda</p></div>
+    <div class="cell"><img src="starter_files/images/boxer.jpg" id="Baby" alt="a boxer" title="Baby"><p class="name t11 t7 t12 t13 t9 t10">Baby</p></div>
+    <div class="cell"><img src="starter_files/images/golden-lab.jpg" id="Tom-tom" alt="a golden lab" title="Tom-tom"><p class="name t11 t2 t12 t13 t9 t10 t5">Tom-tom</p></div>
+    <div class="cell"><img src="starter_files/images/little-dog.jpg" id="Marco" alt="a little dog" title="Marco"><p class="name t1 t2 t8 t13">Marco</p></div>
+    <div class="cell"><img src="starter_files/images/old-shaggy.jpg" id="Shackleton" alt="an old shaggy dog" title="Shackleton"><p class="name t1 t2 t3 t4 t13 t9 t10 t5">Shackleton</p></div>
+    <div class="cell"><img src="starter_files/images/shih-tzu.jpg" id="Midge" alt="A shih-tzu" title="Midge"><p class="name t1 t7 t8 t4 t9">Midge</p></div>
+    <div class="cell"><img src="starter_files/images/young-bulldog.jpg" id="Ladybird" alt="A young bulldog" title="Ladybird"><p class="name t11 t7 t12 t4 t13 t9 t10 t5">Ladybird</p></div>
+    <div class="cell"><img src="starter_files/images/young-peppy.jpg" id="Mina" alt="A young peppy dog" title="Mina"><p class="name t14 t7 t3 t13 t9 t10 t5">Mina</p></div>
 </div>
     </main>
 
     <footer>    
-        <img src="starter_files/images/donate.jpg" alt="Hands holding money to encourage donations" title="Dontate">   
-        <img src="starter_files/images/volunteer.jpg" alt="Image of a volunteer" title="Volunter">   
-        <img src="starter_files/images/location.png" alt="Google map of our location" title="Our Location">   
+        <div class="footer-third" id="donate">Donate</div>
+        <div class="footer-third" id="volunteer">Volunteer</div>
+        <div class="footer-third" id="location">Our Location</div>
     </footer>
         
 <!-- all the tags we want applied to the images -->
 <!-- Add classes to the images with the numerical id of the tags, then use an .id::after psuedo-element
 to apply them; see https://developer.mozilla.org/en-US/docs/Web/CSS/attr#Examples for an example 
 (about 2/3 down the page)-->
-<p class="tag" id="1">Adult</p>
-<p class="tag" id="2">Male</p>
-<p class="tag" id="3">Medium</p>
-<p class="tag" id="4">Easygoing</p>
-<p class="tag" id="5">Good with cats</p>
-<p class="tag" id="6">Senior</p>
-<p class="tag" id="7">Female</p>
-<p class="tag" id="8">Small</p>
-<p class="tag" id="9">Good with kids</p>
-<p class="tag" id="10">Good with other dogs</p>
-<p class="tag" id="11">Young</p>
-<p class="tag" id="12">Large</p>
-<p class="tag" id="13">Energetic</p>
-<p class="tag" id="14">Puppy</p>
+<!-- 
+<span class="tag" id="1">Adult</span>
+<span class="tag" id="2">Male</span>
+<span class="tag" id="3">Medium</span>
+<span class="tag" id="4">Easygoing</span>
+<span class="tag" id="5">Good with cats</span>
+<span class="tag" id="6">Senior</span>
+<span class="tag" id="7">Female</span>
+<span class="tag" id="8">Small</span>
+<span class="tag" id="9">Good with kids</span>
+<span class="tag" id="10">Good with other dogs</span>
+<span class="tag" id="11">Young</span>
+<span class="tag" id="12">Large</span>
+<span class="tag" id="13">Energetic</span>
+<span class="tag" id="14">Puppy</span> 
+-->
     
 
 </body>
 
 </html>
-
-<!-- to tint the footer images, use a linear gradient with the same start and end color.  
-    See the example on the 'Multiple Backgrounds' slide of the css slides -->
