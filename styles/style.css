@@ -23,11 +23,12 @@ main {
 
 .grid {
     display: grid;
-    grid-template-columns: 32% 32% 32%;
+    grid-template-columns: 30% 30% 30%;
 }
 
 .cell {
     line-height: 1.5em;
+    margin-bottom: 3em;
 }
 
 .cell img {
@@ -71,66 +72,82 @@ footer {
 .tag {
     /* display: inline; */
     font-size: .8em;
+    font-weight: 500;
     background-color: #93DDEF;
     padding: 2px 3px;
     /* margin: 2px 2px; */
     border-radius: 10px;
+    white-space: nowrap;
 }
 
 .name:not(.t1)~#t1 {
     visibility: hidden;
+    display: none;
 }
 
 .name:not(.t2)~#t2 {
     visibility: hidden;
+    display: none;
 }
 
 .name:not(.t3)~#t3 {
     visibility: hidden;
+    display: none;
 }
 
 .name:not(.t4)~#t4 {
     visibility: hidden;
+    display: none;
 }
 
 .name:not(.t5)~#t5 {
     visibility: hidden;
+    display: none;
 }
 
 .name:not(.t6)~#t6 {
     visibility: hidden;
+    display: none;
 }
 
 .name:not(.t7)~#t7 {
     visibility: hidden;
+    display: none;
 }
 
 .name:not(.t8)~#t8 {
     visibility: hidden;
+    display: none;
 }
 
 .name:not(.t9)~#t9 {
     visibility: hidden;
+    display: none;
 }
 
 .name:not(.t10)~#t10 {
     visibility: hidden;
+    display: none;
 }
 
 .name:not(.t11)~#t11 {
     visibility: hidden;
+    display: none;
 }
 
 .name:not(.t12)~#t12 {
     visibility: hidden;
+    display: none;
 }
 
 .name:not(.t13)~#t13 {
     visibility: hidden;
+    display: none;
 }
 
 .name:not(.t14)~#t14 {
     visibility: hidden;
+    display: none;
 }
 
 /* The names under each photo */
