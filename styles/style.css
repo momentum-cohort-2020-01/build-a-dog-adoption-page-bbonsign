@@ -22,13 +22,13 @@ main {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    flex: auto
+    /* flex: 1 1 33%; */
 }
 
 .cell {
     line-height: 1.5em;
     margin-bottom: 3em;
-    max-width: 30%;
+    flex: 1 1 33%;
 }
 
 .cell img {
@@ -49,25 +49,32 @@ main {
     font: 2.5em "Oswald";
     text-align: center;
     height: 275px;
-    padding: 95px 0;
+    /* padding: 25% 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 /* To tint the footer images, use a linear gradient with the same start and end color.
     See the example on the 'Multiple Backgrounds' slide of the css slides */
 #donate {
-    background: linear-gradient(rgba(165, 166, 238, 0.7), rgba(165, 166, 238, 0.7)), no-repeat center/cover url("../starter_files/images/donate.jpg");
+    background: linear-gradient(rgba(165, 166, 238, 0.7), rgba(165, 166, 238, 0.7)),
+        no-repeat center/cover url("../starter_files/images/donate.jpg");
 }
 
 #volunteer {
-    background: linear-gradient(rgba(165, 166, 238, 0.7), rgba(165, 166, 238, 0.7)), no-repeat center/cover url("../starter_files/images/volunteer.jpg");
+    background: linear-gradient(rgba(165, 166, 238, 0.7), rgba(165, 166, 238, 0.7)),
+        no-repeat center/cover url("../starter_files/images/volunteer.jpg");
 }
 
 #location {
-    background: linear-gradient(rgba(165, 166, 238, 0.7), rgba(165, 166, 238, 0.7)), no-repeat center/cover url("../starter_files/images/location.png");
+    background: linear-gradient(rgba(165, 166, 238, 0.7), rgba(165, 166, 238, 0.7)),
+        no-repeat center/cover url("../starter_files/images/location.png");
 }
 
-/* ============= Dog Tags ============= */
 
+/* ============= Dog Tags ============= */
 .tag {
     display: inline;
     font-size: .8em;
