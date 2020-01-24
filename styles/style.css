@@ -47,10 +47,12 @@ footer {
     font: 2.5em "Oswald";
     text-align: center;
     height: 275px;
-    padding: 95px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* To tint the footer images, use a linear gradient with the same start and end color.  
+/* To tint the footer images, use a linear gradient with the same start and end color.
     See the example on the 'Multiple Backgrounds' slide of the css slides */
 #donate {
     background: linear-gradient(rgba(165, 166, 238, 0.7), rgba(165, 166, 238, 0.7)), no-repeat center/cover url("../starter_files/images/donate.jpg");
@@ -158,7 +160,7 @@ footer {
     color: blue;
 } */
 
-/* 
+/*
 .t1::after  {Adult}
 .t2::after  {Male}
 .t3::after  {Medium}
@@ -172,5 +174,5 @@ footer {
 .t11::after {>Young}
 .t12::after {>Large}
 .t13::after {>Energetic}
-.t14::after {>Puppy<} 
+.t14::after {>Puppy<}
 */
