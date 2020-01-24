@@ -6,7 +6,6 @@
 }
 
 /* Blue bar at the top, with thing light blue bottom border*/
-
 .header {
     color: white;
     background-color: #0D3F75;
@@ -20,7 +19,6 @@ main {
 }
 
 /* set up the 3x3 picture grid */
-
 .grid {
     display: grid;
     grid-template-columns: 30% 30% 30%;
@@ -44,9 +42,6 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* To tint the footer images, use a linear gradient with the same start and end color.  
-    See the example on the 'Multiple Backgrounds' slide of the css slides */
-
 .footer-third {
     color: white;
     font: 2.5em "Oswald";
@@ -55,6 +50,8 @@ footer {
     padding: 95px 0;
 }
 
+/* To tint the footer images, use a linear gradient with the same start and end color.  
+    See the example on the 'Multiple Backgrounds' slide of the css slides */
 #donate {
     background: linear-gradient(rgba(165, 166, 238, 0.7), rgba(165, 166, 238, 0.7)), no-repeat center/cover url("../starter_files/images/donate.jpg");
 }
